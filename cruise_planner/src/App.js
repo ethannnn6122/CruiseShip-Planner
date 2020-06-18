@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
-import Home from './containers/HomeContainer';
+import Navbar from './components/Navbar';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
     return(
       <>
         <BrowserRouter>
-          <Home/>
+          <Navbar/>
         </BrowserRouter>
       </>
     )

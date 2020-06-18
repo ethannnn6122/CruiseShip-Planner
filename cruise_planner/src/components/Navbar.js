@@ -3,8 +3,9 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Route } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 
-import ShipContainer from '../containers/ShipContainer';
-import Carousel from '../components/Carousel/Carousel';
+import ShipContainer from '../containers/ShipContainer/ShipContainer';
+import HomeContainer from '../containers/HomeContainer/HomeContainer';
+import PortsContainer from '../containers/PortContainer/PortsContainer';
 
 const navbar = () => {
     return(
@@ -20,8 +21,9 @@ const navbar = () => {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <Route path="/" exact component={Carousel}/>
+        <Route path="/" exact component={HomeContainer}/>
         <Route path="/ships" component={ShipContainer}/>
+        <Route path="/ports" component={PortsContainer}/>
         </>
     );
 }
